@@ -570,7 +570,26 @@ header img {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding: 56px 0;
+  background: #000;
+}
 
+footer .wrapper {
+  width: 29.5%;
+}
+
+ .form-main-area input {
+  width: 100%;
+  padding: 13px 0 13px 7px;
+  border: none;
+  background: #2E2E2E;
+}
+
+input[type="email"] {
+  background: #333333;
+}
+}
 
 
 
