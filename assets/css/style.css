@@ -130,9 +130,25 @@ header img {
   height: 53px;
 }
 
-.hamburger {
+.hamburger,
+.cross {
   display: none;
+  text-indent: -9999px;
 }
+
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+.cross::before {
+  content: "\f00d";
+}
+
 
 .menus {
   flex-basis: 32%;
@@ -294,7 +310,10 @@ header img {
 }
 
 .explore {
-  display: none;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background: #ff0000;
 }
 
 .recent-project-cards {
@@ -392,14 +411,51 @@ header img {
 
 .team-card-icons li a,.danny-card-icons a {
   text-indent: -9999px;
+  padding: 5px;
+  border-radius: 100%;
+  background: #F5F5F5;
 }
 
 .team-card-icons li a::before,.danny-card-icons a::before {
-  content: "\f0c9";
+  content: "\f099";
   float: right;
   color: #000;
   font-family: "fontAwesome";
   text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.team-card-icons li a:hover:before,.danny-card-icons a:hover:before {
+  color: #ffa500;
+}
+
+.team-card-icons li:nth-child(2) a::before {
+  content: "\f0e1";
+}
+
+.team-card-icons li:nth-child(3) a::before {
+  content: "\f0e0 ";
+}
+
+.danny-card-icons li:first-child a::before {
+  content: "\f16d";
+}
+
+.danny-card-icons li:nth-child(2) a::before  {
+  content: "\f099";
+}
+.danny-card-icons li:nth-child(3) a::before  {
+  content: "\f1b4";
+}
+.danny-card-icons li:nth-child(4) a::before  {
+  content: "\f17d";
+}
+.danny-card-icons li:nth-child(5) a::before  {
+  content: "\f0e0";
 }
 
 .our-team-lower {
@@ -467,6 +523,36 @@ header img {
   width: 100%;
   position: absolute;
   top: 17%;
+}
+
+.get-in-touch-contents .get-in-touch-icon {
+  text-indent: -9999px;
+}
+
+.get-in-touch-contents .get-in-touch-icon::before {
+  content: "\f041 ";
+  float: right;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 50px;
+  text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.get-in-touch-contents .get-in-touch-icon:hover:before {
+  color: #ffa500;
+}
+
+.get-in-touch-contents:nth-child(2) .get-in-touch-icon::before {
+  content: "\f0e0";
+}
+
+.get-in-touch-contents:nth-child(3) .get-in-touch-icon::before {
+  content: "\f08a";
 }
 
 .get-in-touch h3 {
@@ -571,7 +657,7 @@ header img {
   footer styling starts here
 =================================*/ 
 footer {
-  padding: 56px 0;
+  padding: 56px 0 66px;
   background: #000;
 }
 
@@ -579,22 +665,75 @@ footer .wrapper {
   width: 29.5%;
 }
 
- .form-main-area input {
+footer .wrapper form {
+  text-align: center;
+}
+
+.form-main-area input {
   width: 100%;
   padding: 13px 0 13px 7px;
   border: none;
-  background: #2E2E2E;
+  background-color: #2E2E2E;
 }
 
 input[type="email"] {
   background: #333333;
 }
+
+textarea {
+  width: 100%;
+  padding: 14px 0 25px 7px;
+  border: none;
+  background-color: #333333;
 }
 
+.description-field {
+  position: relative;
+}
 
+.refresh {
+  position: absolute;
+  right: 5px;
+  bottom: 13px;
+  text-indent: -9999px;
+}
 
+.refresh::before {
+  content: "\f021";
+  float: right;
+  color: #15C39A;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
 
+.refresh:hover:before {
+  color: #ffa500;
+}
 
+.form-footer-area {
+  margin-top: 15px;
+}
+
+input[type="submit"] {
+  width: 37%;
+  padding: 12px;
+  margin: auto;
+  border: 1px solid #15C39A;
+  background: transparent;
+  color: #15C39A;
+  font-size: 12px;
+}
+
+footer figure {
+  width: 289px;
+  height: 62px;
+  margin: 30px auto 0;
+}
 
  /*=================================
   footer styling ends here
