@@ -284,12 +284,12 @@ header img {
 /* how we make end  */
 /* our project start  */
 
-.our-projecr {
+.our-project {
   padding: 67px 0 68px;
   background: #F5F5F5;
 }
 
-.our-projecr h3 {
+.our-project h3 {
   margin-bottom: 30px;
 }
 
@@ -341,7 +341,7 @@ header img {
   padding: 69px 0;
 }
 
-.our-team .wrapper {
+.our-team-upper .wrapper {
   padding-bottom: 69px;
 }
 
@@ -368,6 +368,15 @@ header img {
   margin-top: 17px;
   color: #000;
   font-size: 13px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.team-card a:hover {
+  color: #ffa500;
 }
 
 .position {
@@ -393,7 +402,96 @@ header img {
   text-indent: 0;
 }
 
+.our-team-lower {
+  padding: 51px 0 78px;
+  background: #F5F5F5;
+}
+
+.our-team-lower .wrapper {
+  text-align: center;
+}
+
+.our-team-lower-contents {
+  margin-top: 50px;
+  display: flex;
+}
+
+.left-arrow,.right-arrow {
+  position: absolute;
+  display: none;
+  text-align: -9999px;
+}
+
+.team-member-quote {
+  text-align: center;
+}
+
+.team-member-quote p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.team-member-quote figure {
+  width: 50px;
+  height: 50px;
+  margin: 19px auto 0;
+}
+
+.team-member-quote figure img {
+  border-radius: 100%;
+}
+
+.team-member-name {
+  margin-top: 8px;
+  color: #CCCCCC;
+  font-size: 12px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.team-member-name:hover {
+  color: #ffa500;
+}
 /* our team end  */
+/* get in touch started  */
+
+.get-in-touch h3 {
+  font-size: 16px;
+}
+
+.get-in-touch-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-in-touch-contents {
+  flex-basis: 19%;
+  text-align: center;
+}
+
+.get-in-touch-title {
+  margin-top: 20px;
+  display: block;
+  font-size: 13px;
+}
+
+.get-in-touch-contents p {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.sub {
+  vertical-align: sub;
+}
+
+/* get in touch end  */
 
 
 /*=================================
