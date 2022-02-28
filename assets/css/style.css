@@ -459,6 +459,16 @@ header img {
 /* our team end  */
 /* get in touch started  */
 
+.get-in-touch {
+  position: relative;
+}
+
+.lets-get-in-touch {
+  width: 100%;
+  position: absolute;
+  top: 17%;
+}
+
 .get-in-touch h3 {
   font-size: 16px;
 }
@@ -479,6 +489,15 @@ header img {
   display: block;
   color: #2E2E2E;
   font-size: 13px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.get-in-touch-title:hover {
+  color: #ffa500;
 }
 
 .get-in-touch-contents p {
@@ -504,6 +523,15 @@ header img {
   font-weight: bold;
   font-size: 13px;
   text-decoration: underline;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.our-email:hover {
+  color: #ffa500;
 }
 
 .contact-form {
@@ -516,6 +544,7 @@ header img {
 .scroll-down {
   font-weight: bold;
   font-size: 12px;
+  cursor: pointer;
   text-decoration: underline;
 }
 
