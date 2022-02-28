@@ -470,13 +470,14 @@ header img {
 }
 
 .get-in-touch-contents {
-  flex-basis: 19%;
+  flex-basis: 20%;
   text-align: center;
 }
 
 .get-in-touch-title {
   margin-top: 20px;
   display: block;
+  color: #2E2E2E;
   font-size: 13px;
 }
 
@@ -491,6 +492,45 @@ header img {
   vertical-align: sub;
 }
 
+.email-us {
+  margin-top: 17px;  
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.our-email {
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 18px;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.scroll-down {
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.get-social-icons {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.get-social-icons li a {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+}
 /* get in touch end  */
 
 
