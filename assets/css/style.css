@@ -54,6 +54,7 @@ em { font-style: italic; }
 
 img {
   width: 100%;
+  height: 100%;
   border: 0;
   vertical-align: middle;
 }
@@ -100,15 +101,53 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 49.1%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header {
+  padding: 12px 0 20px;
+}
 
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+header img {
+  width: 122px;
+  height: 53px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menus {
+  flex-basis: 32%;
+}
+
+.menus ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menus ul li a {
+  font-size: 9px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.menus ul li a:hover {
+  color: #ffa500;
+}
 
 
 
@@ -120,8 +159,112 @@ li {
   main styling starts here
 =================================*/
 
+/* banner starts  */
 
+.banner {
+  position: relative;
+}
 
+.banner img {
+  height: 311px;
+}
+
+.banner-content {
+  width: 34%;
+  position: absolute;
+  top: 21.5%;
+  left: 32.7%;
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 43px;
+}
+
+.banner-content p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.banner-lower {
+  padding: 49px 0;
+  background: #FEFEC9;
+  text-align: center;
+}
+
+.banner-lower p {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.banner-lower a {
+  padding: 12px 25px;
+  margin-top: 34px; 
+  border: 1px solid;
+  border-bottom: 2px solid;
+  color: #000;
+  font-size: 13px;
+  font-style: italic;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.banner-lower a:hover {
+  color: #ffa500;
+}
+
+/* banner ends  */
+/* how we make start  */
+
+.how-we-make {
+  padding: 69px 0 58px;
+}
+
+.how-we-make h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.how-we-make-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-card {
+  flex-basis: 31.8%;
+  text-align: center;
+}
+
+.brand-card figure {
+  width: 237px;
+  height: 174px;
+}
+
+.how-we-make h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.brand-card-title {
+  margin-top: 31px;
+  font-size: 14px;
+  display: block;
+}
+
+.brand-card p {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+/* how we make end  */
 
 
 
