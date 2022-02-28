@@ -318,16 +318,82 @@ header img {
 .project-title {
   margin-top: 17px;
   display: block;
+  color: #000;
   font-size: 14px;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
 }
 
+.project-title:hover {
+  color: #ffa500;
+}
 .project-field {
   font-size: 12px;
 }
 
 /* our project end  */
+/* our team start  */
 
+.our-team {
+  padding: 69px 0;
+}
 
+.our-team .wrapper {
+  padding-bottom: 69px;
+}
+
+.our-team-cards {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card figure {
+  width: 173px;
+  height: 178px;
+}
+
+.team-card figure img {
+  border-radius: 100%;
+}
+
+.team-card a {
+  margin-top: 17px;
+  color: #000;
+  font-size: 13px;
+}
+
+.position {
+  margin-top: 5px;
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.team-card ul {
+  margin-top: 16px;
+}
+
+.team-card-icons li a,.danny-card-icons a {
+  text-indent: -9999px;
+}
+
+.team-card-icons li a::before,.danny-card-icons a::before {
+  content: "\f0c9";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+/* our team end  */
 
 
 /*=================================
