@@ -311,18 +311,40 @@ header img {
 .explore {
   width: 97%;
   padding: 10px;
+  position: relative;
   color: #fff;
   background: #ff0000;
+  cursor: pointer;
 }
 
-.explore-icon {
-  float: right;
+.explore::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .recent-project-cards {
+  height: 0;
   margin-top: 16px;
+  position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.recent-project-cards-explore {
+  height: auto;
+}
+
+.hide::before {
+  content: "-";
 }
 
 .recent-project-card {
