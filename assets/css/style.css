@@ -621,21 +621,6 @@ header img {
   content: "\f08a";
 }
 
-.get-in-touch h4 {
-  font-size: 18px;
-  text-align: center;
-}
-
-.get-in-touch h4::after {
-  content: "";
-  width: 65px;
-  height: 2px;
-  margin: 25px auto;
-  display: block;
-  background-color: #999999;
-  text-align: center;
-}
-
 .get-in-touch-container {
   margin-top: 40px;
   display: flex;
@@ -664,8 +649,8 @@ header img {
   color: #ffa500;
 }
 
-.get-in-touch-contents p {
-  margin-top: 18px;
+.get-in-touch-contents address {
+  margin-top: 16px;
   font-size: 12px;
   font-weight: bold;
   line-height: 16px;
@@ -723,6 +708,7 @@ header img {
 .get-social-icons li a {
   color: #000;
   font-size: 13px;
+  white-space: nowrap;
 }
 
 .get-social-icons li a::before {
@@ -889,7 +875,7 @@ footer figure {
     column-gap: 10px;
   }
 
-  .get-in-touch h4::after {
+  .get-in-touch h3::after {
     display: none;
   }
 }
@@ -928,7 +914,7 @@ footer figure {
     margin-top: 9px;
   }
 
-  .get-in-touch-contents p {
+  .get-in-touch-contents address {
     margin-top: 9px;
   }
 
@@ -986,7 +972,7 @@ footer figure {
   top: 51.7%;
 }
 
-.get-in-touch h4{
+.get-in-touch h3{
   font-size: 14px;
 }
 
@@ -999,7 +985,7 @@ footer figure {
   font-size: 8px;
 }
 
-.get-in-touch-contents p {
+.get-in-touch-contents address {
   font-size: 9px;
   line-height: initial;
 }
@@ -1035,6 +1021,18 @@ footer figure {
   width: 100%;
 }
 
+.banner-lower a:hover,.team-card-icons li a:hover:before,.refresh:hover:before, .danny-card-icons a:hover:before,.brand-card-title:hover,.team-card a:hover,.team-member-name:hover,.get-in-touch-contents .get-in-touch-icon,.get-in-touch-title,.get-social-icons li a:hover:before {
+  color: initial;
+}
+
+
+.project-title:hover,.our-email:hover {
+  color: #000;
+}
+
+input[type="submit"]:hover {
+  color: #15C39A;
+  border-color: #15C39A;
 }
 
 /*media query for 480px starts here*/
