@@ -162,7 +162,8 @@ header img {
 
 
 .menus {
-  flex-basis: 32%;
+  margin-right: 16px;
+  flex-basis: 31.5%;
 }
 
 .menus ul {
@@ -363,7 +364,7 @@ header img {
 }
 
 .recent-project-cards-explore {
-  height: auto;
+  height: 300px;
 }
 
 .hide::before {
@@ -517,7 +518,7 @@ header img {
 }
 
 .our-team-lower-contents {
-  margin-top: 50px;
+  margin-top: 58px;
   display: flex;
   justify-content: space-between;
 }
@@ -533,15 +534,17 @@ header img {
 .left-arrow,.right-arrow {
   position: absolute;
   display: none;
-  text-align: -9999px;
+  text-indent: -9999px;
 }
 
 .team-member-quote {
-  flex-basis: 43%;
+  flex-basis: 49%;
   text-align: center;
 }
 
 .team-member-quote p {
+  width: 80%;
+  margin: auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 25px;
@@ -619,7 +622,7 @@ header img {
 }
 
 .get-in-touch h4 {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -893,12 +896,6 @@ footer figure {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-  /* header .wrapper */
-
-  /* .banner-content,.banner-cross,.left-arrow,.right-arrow,.lets-get-in-touch,.refresh {
-    display: none;
-  } */
 
   .wrapper,footer .wrapper,.lets-get-in-touch .wrapper {
     width: 80%;
