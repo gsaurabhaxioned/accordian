@@ -111,6 +111,17 @@ h3 {
   font-size: 18px;
   text-align: center;
 }
+
+h3::after {
+  content: "";
+  width: 65px;
+  height: 2px;
+  margin: 25px auto;
+  display: block;
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -195,19 +206,31 @@ header img {
 .banner-content {
   width: 34%;
   position: absolute;
-  top: 21.5%;
+  top: 15.2%;
   left: 32.7%;
   text-align: center;
 }
 
 .banner-content h2 {
+  color: #fff;
   font-size: 34px;
   letter-spacing: 1px;
   line-height: 43px;
 }
 
+.banner-content h2::after {
+  content: "";
+  width: 65px;
+  height: 2px;
+  margin: 19px auto;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+}
+
 .banner-content p {
   margin-top: 10px;
+  color: #fff;
   font-size: 12px;
   font-style: italic;
 }
@@ -216,7 +239,7 @@ header img {
   position: absolute;
   top: 55.7%;
   left: 50%;
-  font-size: 98px;
+  font-size: 67px;
   transform: translate(-50%, -50%);
 }
 
@@ -593,6 +616,16 @@ header img {
   text-align: center;
 }
 
+.get-in-touch h4::after {
+  content: "";
+  width: 65px;
+  height: 2px;
+  margin: 25px auto;
+  display: block;
+  background-color: #999999;
+  text-align: center;
+}
+
 .get-in-touch-container {
   margin-top: 40px;
   display: flex;
@@ -816,6 +849,10 @@ footer figure {
   .our-team-lower-contents {
     column-gap: 10px;
   }
+
+  .get-in-touch h4::after {
+    display: none;
+  }
 }
 
 /*media query for 995px starts here*/
@@ -876,15 +913,28 @@ footer figure {
 @media only screen and (max-width: 768px) {
 
 .menus {
+    width: 100%;
+    padding: 10px 0;
     display: none;
     background-color: #15C39A;
-    color: #fff;
   }
 
 .menus ul {
     flex-direction: column;
     row-gap: 10px;
   }
+
+.menus ul li {
+  text-align: center;
+}
+
+.menus ul li a {
+  color: #fff;
+}
+
+.menus ul li a:hover {
+  color: #fff;
+}
 
 .hamburger {
   margin-right: auto;
