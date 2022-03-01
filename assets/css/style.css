@@ -293,6 +293,7 @@ header img {
   -ms-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
+  white-space: nowrap;
 }
 
 .brand-card-title:hover {
@@ -482,6 +483,14 @@ header img {
 .our-team-lower-contents {
   margin-top: 50px;
   display: flex;
+}
+
+.team-lower-icon {
+  padding: 3px 18px;
+  border-radius: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 38px;
 }
 
 .left-arrow,.right-arrow {
@@ -762,31 +771,163 @@ footer figure {
 =================================*/ 
 
 /*media query starts*/
+
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1440px) {
+
+  .menus {
+    flex-basis: 50%;
+  }
+
+  .lets-get-in-touch {
+    top: 1%;
+  }
+
+  .our-team-cards {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .team-card {
+    flex-basis: 40%;
+  }
+
+  .banner-content {
+    top: 16.5%;
+  }
+
+  .banner-cross {
+    top: 53.7%;
+  }
+
+  .our-team-lower-contents {
+    column-gap: 10px;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
   /* header .wrapper */
 
-  .banner-content,.banner-cross,.left-arrow,.right-arrow,.lets-get-in-touch,.refresh {
+  /* .banner-content,.banner-cross,.left-arrow,.right-arrow,.lets-get-in-touch,.refresh {
     display: none;
-  }
+  } */
 
-  .wrapper {
+  .wrapper,footer .wrapper {
     width: 80%;
   }
 
-  header .wrapper {
+  header .wrapper,.how-we-make-cards,.our-team-cards {
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
     justify-content: center;
   }
 
-
-  .how-we-make-cards {
-    flex-wrap: wrap;
-    row-gap: 20px;
-    align-items: center;
-    justify-content: center;
+  .banner-content {
+    top: 1%;
   }
+
+  .menus {
+    width: 40%;
+  }
+
+  .banner-cross {
+    top: 55.7%;
+  }
+
+  .get-in-touch-container {
+    margin-top: 2px;
+  }
+
+  .get-in-touch-title {
+    margin-top: 9px;
+  }
+
+  .get-in-touch-contents p {
+    margin-top: 9px;
+  }
+
+  .email-us {
+    margin-top: 9px;
+  }
+
+  .contact-form {
+    margin-top: 11px;
+  }
+
 }  
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+
+.menus {
+    display: none;
+    background-color: #15C39A;
+    color: #fff;
+  }
+
+.menus ul {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+.hamburger {
+  margin-right: auto;
+    display: block;
+  }
+
+.banner-content h2 {
+  line-height: initial;
+}
+
+.banner-cross {
+  top: 50.7%;
+}
+
+.get-in-touch h3 {
+  font-size: 14px;
+}
+
+.get-in-touch-contents .get-in-touch-icon::before{
+  font-size: 25px;
+}
+
+.get-in-touch-title {
+  margin-top: 9px;
+  font-size: 8px;
+}
+
+.get-in-touch-contents p {
+  font-size: 9px;
+  line-height: initial;
+}
+
+.email-us {
+  margin-top: 6px;
+  font-size: 10px;
+}
+
+.our-email {
+  font-size: 9px;
+}
+
+.contact-form {
+  margin-top: 2px;
+  font-size: 10px;
+}
+
+.scroll-down {
+  font-size: 9px;
+}
+
+.get-social-icons {
+  margin-top: 2px;
+  row-gap: 1px;
+}
+
+.get-social-icons li a {
+  font-size: 10px;
+}
+}
