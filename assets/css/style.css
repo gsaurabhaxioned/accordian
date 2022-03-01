@@ -222,7 +222,7 @@ header img {
   content: "";
   width: 65px;
   height: 2px;
-  margin: 19px auto;
+  margin: 22px auto;
   display: block;
   background-color: #fff;
   text-align: center;
@@ -237,7 +237,7 @@ header img {
 
 .banner-cross {
   position: absolute;
-  top: 55.7%;
+  top: 57.7%;
   left: 50%;
   font-size: 67px;
   transform: translate(-50%, -50%);
@@ -250,7 +250,7 @@ header img {
 }
 
 .banner-lower p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 19px;
 }
 
@@ -277,7 +277,7 @@ header img {
 /* how we make start  */
 
 .how-we-make {
-  padding: 69px 0 58px;
+  padding: 67px 0 58px;
 }
 
 .how-we-make-cards {
@@ -297,10 +297,10 @@ header img {
 }
 
 .brand-card-title {
-  margin-top: 31px;
+  margin-top: 29px;
   display: block;
   color: #000;
-  font-size: 14px;
+  font-size: 13px;
   transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
   -ms-transition: all ease-in-out 0.5s;
@@ -454,12 +454,13 @@ header img {
 }
 
 .team-card ul {
-  margin-top: 16px;
+  margin-top: 1px;
 }
+
 
 .team-card-icons li a,.danny-card-icons a {
   text-indent: -9999px;
-  padding: 5px;
+  padding: 6px;
   border-radius: 100%;
   background: #F5F5F5;
 }
@@ -507,7 +508,7 @@ header img {
 }
 
 .our-team-lower {
-  padding: 51px 0 78px;
+  padding: 57px 0 78px;
   background: #F5F5F5;
 }
 
@@ -518,6 +519,7 @@ header img {
 .our-team-lower-contents {
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
 }
 
 .team-lower-icon {
@@ -535,6 +537,7 @@ header img {
 }
 
 .team-member-quote {
+  flex-basis: 43%;
   text-align: center;
 }
 
@@ -579,6 +582,10 @@ header img {
   width: 100%;
   position: absolute;
   top: 17%;
+}
+
+.lets-get-in-touch .wrapper {
+  width: 42.1%;
 }
 
 .get-in-touch-contents .get-in-touch-icon {
@@ -638,7 +645,7 @@ header img {
 }
 
 .get-in-touch-title {
-  margin-top: 20px;
+  margin-top: 26px;
   display: block;
   color: #2E2E2E;
   font-size: 13px;
@@ -647,6 +654,7 @@ header img {
   -ms-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
+  white-space: nowrap;
 }
 
 .get-in-touch-title:hover {
@@ -665,16 +673,16 @@ header img {
 }
 
 .email-us {
-  margin-top: 17px;  
+  margin-top: 16px;  
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 .our-email {
   color: #000;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: underline;
   transition: all ease-in-out 0.5s;
   -webkit-transition: all ease-in-out 0.5s;
@@ -702,17 +710,44 @@ header img {
 }
 
 .get-social-icons {
-  margin-top: 14px;
+  margin: 14px 21px 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   row-gap: 8px;
 }
 
 .get-social-icons li a {
   color: #000;
   font-size: 13px;
-  font-weight: bold;
 }
+
+.get-social-icons li a::before {
+  content: "\f230";
+  margin-right: 5px;
+  float: left;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+.get-social-icons li a:hover:before {
+  color: #ffa500;
+}
+
+.get-social-icons li:nth-child(2) a::before {
+  content: "\f099";
+}
+
+.get-social-icons li:nth-child(3) a::before {
+  content: "\f0e1";
+}
+
 /* get in touch end  */
 
 
@@ -729,10 +764,11 @@ footer {
 }
 
 footer .wrapper {
-  width: 29.5%;
+  width: 29.2%;
 }
 
 footer .wrapper form {
+  width: 98.6%;
   text-align: center;
 }
 
@@ -864,7 +900,7 @@ footer figure {
     display: none;
   } */
 
-  .wrapper,footer .wrapper {
+  .wrapper,footer .wrapper,.lets-get-in-touch .wrapper {
     width: 80%;
   }
 
@@ -941,12 +977,16 @@ footer figure {
     display: block;
   }
 
+  .banner-content {
+    width: 42%;
+  }
+
 .banner-content h2 {
   line-height: initial;
 }
 
 .banner-cross {
-  top: 50.7%;
+  top: 51.7%;
 }
 
 .get-in-touch h4{
@@ -993,4 +1033,28 @@ footer figure {
 .get-social-icons li a {
   font-size: 10px;
 }
+
+.lets-get-in-touch .wrapper {
+  width: 100%;
 }
+
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .banner-content h2 {
+    font-size: 25px;
+  }
+
+  .banner-cross {
+    top: 48.7%;
+  }
+
+  .get-in-touch {
+    padding: 20px 0;
+  }
+
+  .get-in-touch figure {
+    height: 100%;
+  }
+} 
