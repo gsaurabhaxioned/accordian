@@ -257,11 +257,6 @@ header img {
   padding: 69px 0 58px;
 }
 
-.how-we-make h3 {
-  font-size: 18px;
-  text-align: center;
-}
-
 .how-we-make-cards {
   margin-top: 30px;
   display: flex;
@@ -276,11 +271,6 @@ header img {
 .brand-card figure {
   width: 100%;
   height: 174px;
-}
-
-.how-we-make h3 {
-  font-size: 18px;
-  text-align: center;
 }
 
 .brand-card-title {
@@ -576,8 +566,9 @@ header img {
   content: "\f08a";
 }
 
-.get-in-touch h3 {
+.get-in-touch h4 {
   font-size: 16px;
+  text-align: center;
 }
 
 .get-in-touch-container {
@@ -886,7 +877,7 @@ footer figure {
   top: 50.7%;
 }
 
-.get-in-touch h3 {
+.get-in-touch h4{
   font-size: 14px;
 }
 
